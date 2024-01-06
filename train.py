@@ -38,7 +38,10 @@ y_test = np.log1p(df_test['retail_price'].values)
 del(df_test['retail_price'])
 del(df_full_train['retail_price'])
 
-
+categorical = [
+'pid', 'is_FK_Advantage_product', 'product_rating','overall_rating', 'brand', 
+]
+numerical= ['discounted_price']
 
 def model_eval(true, predicted):
     mae = mean_absolute_error(true, predicted)
@@ -60,15 +63,15 @@ opt_params = {
 }
 num_round = 100
 
-train_full_dicts = df_full_train.to_dict(orient='records')
+train_full_dicts = df_full_train[categorical + numerical].to_dict(orient='records')
 dv = DictVectorizer(sparse=True)
 X_full_train = dv.fit_transform(train_full_dicts)
 
 test_dicts = df_test.to_dict(orient='records')
 X_test = dv.transform(test_dicts)
 
-d_full_train = xgb.DMatrix(X_full_train, label=y_full_train)
-dtest = xgb.DMatrix(X_test, label= y_test)
+d_full_train = xgb.DMatrix(X_full_train, label=y_full_train, feature_names= dv.get_feature_names_out().tolist())
+dtest = xgb.DMatrix(X_test, feature_names= dv.get_feature_names_out().tolist())
 
 xgbst = xgb.train(opt_params, d_full_train, num_round)
 y_pred = xgbst.predict(dtest)
