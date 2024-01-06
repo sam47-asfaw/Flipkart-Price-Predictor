@@ -30,13 +30,14 @@ SEED = 42
 df_full_train, df_test = train_test_split(df, test_size=0.2, random_state=SEED)
 
 df_full_train = df_full_train.reset_index(drop=True)
-y_full_train = df_full_train['retail_price'].values
+y_full_train = np.log1p(df_full_train['retail_price'].values)
 
 df_test = df_test.reset_index(drop=True)
-y_test = df_test['retail_price'].values
+y_test = np.log1p(df_test['retail_price'].values)
 
 del(df_test['retail_price'])
 del(df_full_train['retail_price'])
+
 
 
 def model_eval(true, predicted):
@@ -76,7 +77,7 @@ y_pred = xgbst.predict(dtest)
 mae,mse, rmse, r2  = model_eval(y_test, y_pred)
 print(f'mae: {mae}, mse: {mse}, rmse: {rmse}, r2: {r2}')
 
-output_file = f'model_C={1.0}.bin'
+output_file = f'model_reg={1.0}.bin'
 output_file
 
 f_out = open(output_file, 'wb')
