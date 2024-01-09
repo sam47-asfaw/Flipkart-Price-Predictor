@@ -18,18 +18,17 @@ def predict():
     product = request.get_json()
 
     X = dv.transform([product])
-
     dx = xgb.DMatrix(X, feature_names=dv.get_feature_names_out().tolist())
+
     pred = xgbst.predict(dx)
-    pred = np.expm1(pred)[0]
-    price = pred.round(2)
+    price = np.exmp1(pred)[0]
     
     result = {
-        'Product Price': float(price)
+        'Product Price': price
     }
     
     return jsonify(result)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(debug=True, host='0.0.0.0', port=9696)

@@ -13,6 +13,12 @@ from sklearn.metrics import r2_score
 
 df = pd.read_csv("flipkart.csv")
 
+# replace unnecessary characters with underscore
+strings= ['product_url','product_category_tree','image','product_specifications']
+
+for col in strings:
+    df[col] = df[col].str.lower().str.replace('/','_').str.replace(">>","_").str.replace('-','_').str.replace(':','_').str.replace('[','_').str.replace(']','_').str.replace('(','_').str.replace(')','_').str.replace('{','_').str.replace('}','_').str.replace('=>','_')
+
 categorical = list(df.select_dtypes(include='O').columns)
 numerical = list(df.select_dtypes(exclude='O').columns)
 
