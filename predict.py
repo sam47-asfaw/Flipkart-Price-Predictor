@@ -21,10 +21,10 @@ def predict():
     dx = xgb.DMatrix(X, feature_names=dv.get_feature_names_out().tolist())
 
     pred = xgbst.predict(dx)
-    price = np.exmp1(pred)[0]
+    price = np.expm1(pred[0])
     
     result = {
-        'Product Price': price
+        'Product Price': float(price)
     }
     
     return jsonify(result)
