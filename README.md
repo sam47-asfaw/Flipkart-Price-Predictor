@@ -5,12 +5,12 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 ## Table of Contents
 
-- [Project Structure](#projectstr)
+- [Project Structure](#projectstructure)
 - [Data](#data)
-- [Running The Project](#run)
-- [Local Deployment](#deploy)
+- [Run The Project](#runtheproject)
+- [Local Deployment](#localdeployment)
 - [Example](#example)
-- [Cloud Deployment](#cloud) 
+- [Cloud Deployment](#clouddeployment) 
 
 
 ## Project Structure
