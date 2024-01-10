@@ -5,9 +5,9 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 ## Table of Contents
 
-- [PojectStructure](#projectstructure)
+- [Poject Structure](#projectstructure)
 - [Data](#data)
-- [RunProject](#runproject)
+- [Run Project](#runproject)
 - [Docker](#docker)
 - [Example](#example)
 - [Cloud](#cloud) 
@@ -45,7 +45,7 @@ This is an E-commerce Flipkart Dataset with exactly 20,000 samples. It has 15 co
 * The Retail_Price table contains information on all 20,000 products from Flipkart Ecommerce Site.
 * Each record represents one product, and contains details about their description, retail_price, discount_price,image, etc.
 
-## Running The Project
+## Run The Project
 
 #### Create new folder
 ```
