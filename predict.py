@@ -6,15 +6,14 @@ import numpy as np
 
 import pickle
 
+
 with open('./model_reg=1.0.bin', 'rb') as f_in:
     (dv,xgbst)= pickle.load(f_in)
 
 app = Flask('Flipkart')
 
-
 @app.route('/predict', methods= ['POST'])
 def predict():
-
     product = request.get_json()
 
     X = dv.transform([product])
@@ -31,4 +30,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=9696)
+   app.serve(debug=True, host='0.0.0.0', port=8080)
