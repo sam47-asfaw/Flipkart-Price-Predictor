@@ -30,11 +30,11 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 6. [requirements.txt](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/requirements.txt) : file containing the required dependencies that have to be installed for the local enviroment
 
-7. [Dockerfile](https://github.com/sam47-asfaw/Flipkart-Price-Predicto/blob/main/Dockerfile) : file with instruction on how to containerize the project.r
+7. [Dockerfile](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/Dockerfile) : file with instruction on how to containerize the project.r
 
-8. [test.py](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test.py) : script used to test the final model
+8. [test.ipynb](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test.py) : script used to test the final model
 
-9. [test_data](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test_data) : contains json values of records for test purposes 
+9. [Test_data](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test) : contains json values of records for test purposes 
 
 ## Data
 About dataset
