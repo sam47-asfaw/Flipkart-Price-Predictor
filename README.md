@@ -32,7 +32,7 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 7. [Dockerfile](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/Dockerfile) : file with instruction on how to containerize the project.r
 
-8. [test.ipynb](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test.py) : script used to test the final model
+8. [test.ipynb](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test.ipynb) : script used to test the final model
 
 9. [Test Data](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test) : contains json values of records for test purposes 
 
