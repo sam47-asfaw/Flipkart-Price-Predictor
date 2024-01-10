@@ -9,8 +9,8 @@ The goal of the project is to predict the retail price of products.Predicting th
 - [Data](#data)
 - [Running The Project](#run)
 - [Local Deployment](#deploy)
-- [Cloud Deployment](#cloud)
-- [Example](#example) 
+- [Example](#example)
+- [Cloud Deployment](#cloud) 
 
 
 ## Project Structure
@@ -108,7 +108,7 @@ Here is an example of what the output will look like after deployed locally
 gcloud builds submit --tag gcr.io/your_project_id/predict
 ```
 ```
-gcloud run deploy --image gcr.io/dauntless-brace-407516/predict --platform managed
+gcloud run deploy --image gcr.io/your_project_id/predict --platform managed
 ```
 ##### select the appropriate region, fill out appropriate api name and choose y
 ## Test deployed API
