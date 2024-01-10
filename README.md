@@ -22,7 +22,7 @@ The goal of the project is to predict the retail price of products.Predicting th
  * feature engineering and selection
  * model training, hyperparameter optimization and model selection
 
-3. [model_C=1.0.bin](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/model_C=1.0.bin) : final model in pickle format
+3. [model_reg=1.0.bin](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/model_re=1.0.bin) : final model in pickle format
    
 4. [train.py](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/train.py): python script that trains the final selected model
 
