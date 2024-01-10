@@ -47,25 +47,25 @@ Contents
 
 ## Running The Project
 
-#### Create new folder
+Create new folder
 ```
 mkdir [name_of_your_folder] && cd [name_of_your_folder]
 ```
-#### clone this repository:
+clone this repository:
 ```
 https://github.com/sam47-asfaw/Flipkart-Price-Predictor.git
 ```
-#### create anaconda enviroment:
+create anaconda enviroment:
 ```
 conda create -p name_of_your_env python==(python_version) -y
 ```
 
-#### acivate your enviroment
+acivate your enviroment
 ```
 conda activate name_of_your_env
 ```
 
-#### install the dependencies
+install the dependencies
 cd into your_proj_folder
 ```
 pip install -r requirements.txt
@@ -74,13 +74,13 @@ pip install -r requirements.txt
 ```
 python train.py
 ```
-#### run the model
-##### open the terminal,cd into your project folder and run the following instruction
+run the model
+open the terminal,cd into your project folder and run the following instruction
 ```
 waitress-serve --listen=0.0.0.0:8080 predict:app
 ```
 ## Local Deployment
-#### Deploy the model locally:
+Deploy the model locally:
 * cd into the main_project_folder
 * make sure docker engine is running
 ```
@@ -89,9 +89,9 @@ docker build -t your_container_name .
 ```
 docker run -it --rm -p 8080:8080 your_container_name
 ```
-#### test the model
-#### open test.ipynb and test the model
-#### make sure to substitute the url with the 'http:\localhost\8080\predict'
+test the model
+open test.ipynb and test the model
+make sure to substitute the url with the 'http:\localhost\8080\predict'
 
 ## Example
 Here is an example of what the output will look like after deployed locally
