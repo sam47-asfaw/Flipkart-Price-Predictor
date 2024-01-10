@@ -5,12 +5,12 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 ## Table of Contents
 
-- [Project Structure](#projectstructure)
+- [PojectStructure](#projectstructure)
 - [Data](#data)
-- [Run The Project](#runtheproject)
-- [Local Deployment](#localdeployment)
+- [RunProject](#runproject)
+- [Docker](#docker)
 - [Example](#example)
-- [Cloud Deployment](#clouddeployment) 
+- [Cloud](#cloud) 
 
 
 ## Project Structure
@@ -37,36 +37,36 @@ The goal of the project is to predict the retail price of products.Predicting th
 9. [Test Data](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/test) : contains json values of records for test purposes 
 
 ## Data
-About dataset
+#### About dataset
 This is an E-commerce Flipkart Dataset with exactly 20,000 samples. It has 15 columns with a lot of information. You can use it to predict price of products of predict which category a product might fall under.
   
-Contents
+#### Contents
 * This dataset contains Flipkart Ecommerce Data in CSV format: 
 * The Retail_Price table contains information on all 20,000 products from Flipkart Ecommerce Site.
 * Each record represents one product, and contains details about their description, retail_price, discount_price,image, etc.
 
 ## Running The Project
 
-Create new folder
+#### Create new folder
 ```
 mkdir [name_of_your_folder] && cd [name_of_your_folder]
 ```
-clone this repository:
+#### clone this repository:
 ```
 https://github.com/sam47-asfaw/Flipkart-Price-Predictor.git
 ```
-create anaconda enviroment:
+#### create anaconda enviroment:
 ```
 conda create -p name_of_your_env python==(python_version) -y
 ```
 
-acivate your enviroment
+#### acivate your enviroment
 ```
 conda activate name_of_your_env
 ```
 
-install the dependencies
-cd into your_proj_folder
+#### install the dependencies
+#### cd into your_proj_folder
 ```
 pip install -r requirements.txt
 ```
@@ -74,13 +74,13 @@ pip install -r requirements.txt
 ```
 python train.py
 ```
-run the model
-open the terminal,cd into your project folder and run the following instruction
+#### run the model
+#### open the terminal,cd into your project folder and run the following instruction
 ```
 waitress-serve --listen=0.0.0.0:8080 predict:app
 ```
 ## Local Deployment
-Deploy the model locally:
+#### Deploy the model locally:
 * cd into the main_project_folder
 * make sure docker engine is running
 ```
@@ -89,9 +89,9 @@ docker build -t your_container_name .
 ```
 docker run -it --rm -p 8080:8080 your_container_name
 ```
-test the model
-open test.ipynb and test the model
-make sure to substitute the url with the 'http:\localhost\8080\predict'
+#### test the model
+#### open test.ipynb and test the model
+#### make sure to substitute the url with the 'http:\localhost\8080\predict'
 
 ## Example
 Here is an example of what the output will look like after deployed locally
