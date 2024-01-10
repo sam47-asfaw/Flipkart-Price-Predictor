@@ -79,7 +79,7 @@ python train.py
 ```
 waitress-serve --listen=0.0.0.0:8080 predict:app
 ```
-## Deployment
+## Local Deployment
 #### Deploy the model locally:
 * cd into the main_project_folder
 * make sure docker engine is running
