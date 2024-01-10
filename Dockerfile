@@ -26,7 +26,7 @@ RUN source ~/.bashrc && /venv/bin/pip install -r requirements.txt
 COPY ["model_reg=1.0.bin", "predict.py", "./"]
 
 # Expose the port
-EXPOSE 9696
+EXPOSE 8080
 
 # Command to run the application
-CMD ["/venv/bin/waitress-serve", "--host=0.0.0.0", "--port=9696", "predict:app"]
+CMD ["/venv/bin/waitress-serve", "--host=0.0.0.0", "--port=8080", "predict:app"]
