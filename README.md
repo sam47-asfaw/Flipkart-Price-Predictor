@@ -7,7 +7,7 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 - [Poject Structure](#projectstructure)
 - [Data](#data)
-- [Run Project](#runproject)
+- [Run The Project](#runtheproject)
 - [Docker](#docker)
 - [Example](#example)
 - [Cloud](#cloud) 
@@ -96,7 +96,6 @@ docker run -it --rm -p 8080:8080 your_container_name
 ## Example
 Here is an example of what the output will look like after deployed locally
 ![reg_result](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/assets/62788450/a0bc82ce-3320-4728-968f-33064ba3039a)
-)
 
 ## Cloud Deployment
 #### Deploy the model as Flask API on Google Cloud API
