@@ -115,7 +115,7 @@ gcloud run deploy --image gcr.io/your_project_id/predict --platform managed
 ##### select the appropriate region, fill out appropriate api name and choose y
 ##### Check this [video](https://youtu.be/vieoHqt7pxo?si=f99uWSE1EqQf_5FC) for better instructions.
 ## Test
-##### Replace the url 'http:\\localhost\8080\predict' with the google cloud plaform generated url in the test.ipynb and test it. 
+##### Replace the url 'http:\\localhost\8080\predict' with the google cloud plaform generated url in test.ipynb script and test it. 
 
 
 
