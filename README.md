@@ -117,8 +117,8 @@ gcloud run deploy --image gcr.io/your_project_id/predict --platform managed
 ## Test
 ##### 1) Replace the url 'http:\\localhost\8080\predict' with the google cloud plaform generated url in test.ipynb script and test it.
 ##### 2) Test on Postman: 
-####### open postman and paste the GCP generated url on the url textfield and choose the POST method copy and paste any of the prepared json test data from the test folder in the body part
-####### click the send button
+###### open postman and paste the GCP generated url on the url textfield and choose the POST method copy and paste any of the prepared json test data from the test folder in the body part
+###### click the send button
 ###### Result:
 ![reg_test_res](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/assets/62788450/37474861-749b-4913-9bea-08c710e1402f)
 
