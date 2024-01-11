@@ -5,15 +5,17 @@ The goal of the project is to predict the retail price of products.Predicting th
 
 ## Table of Contents
 
-- [Poject Structure](#projectstructure)
+- [Structure](#projectstructure)
 - [Data](#data)
-- [Run The Project](#runtheproject)
+- [Run](#run)
 - [Docker](#docker)
 - [Example](#example)
-- [Cloud](#cloud) 
+- [Cloud](#cloud)
+- [Test](#test)
 
 
-## Project Structure
+## Structure
+#### Project Structure
 1. [ReadME.md](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/README.md): contains all the information about the project.
 
 2. [notebook.ipynb](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/blob/main/notebook.ipynb) : contains the following  
@@ -45,7 +47,8 @@ This is an E-commerce Flipkart Dataset with exactly 20,000 samples. It has 15 co
 * The Retail_Price table contains information on all 20,000 products from Flipkart Ecommerce Site.
 * Each record represents one product, and contains details about their description, retail_price, discount_price,image, etc.
 
-## Run The Project
+## Run
+#### Run the Project
 
 #### Create new folder
 ```
@@ -79,7 +82,7 @@ python train.py
 ```
 waitress-serve --listen=0.0.0.0:8080 predict:app
 ```
-## Local Deployment
+## Docker
 #### Deploy the model locally:
 * cd into the main_project_folder
 * make sure docker engine is running
@@ -97,7 +100,7 @@ docker run -it --rm -p 8080:8080 your_container_name
 Here is an example of what the output will look like after deployed locally
 ![reg_result](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/assets/62788450/a0bc82ce-3320-4728-968f-33064ba3039a)
 
-## Cloud Deployment
+## Cloud
 ###### Deploy the model as Flask API on Google Cloud API
 ###### Install [google cloud sdk](https://cloud.google.com/sdk/docs/install)
 ###### Set up your profile on Google Cloud Platform 
@@ -111,7 +114,7 @@ gcloud run deploy --image gcr.io/your_project_id/predict --platform managed
 ```
 ###### select the appropriate region, fill out appropriate api name and choose y
 ###### Check this [video](https://youtu.be/vieoHqt7pxo?si=f99uWSE1EqQf_5FC) for better instructions.
-## Test deployed API
+## Test
 ##### Exchange the google cloud plaform generated url in the test.ipynb and test it. 
 
 
