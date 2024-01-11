@@ -98,18 +98,19 @@ Here is an example of what the output will look like after deployed locally
 ![reg_result](https://github.com/sam47-asfaw/Flipkart-Price-Predictor/assets/62788450/a0bc82ce-3320-4728-968f-33064ba3039a)
 
 ## Cloud Deployment
-#### Deploy the model as Flask API on Google Cloud API
-##### Install [google cloud sdk](https://cloud.google.com/sdk/docs/install)
-##### Set up your profile on Google Cloud Platform 
-##### Create your first project and enable Cloud Run and Cloud Build API's
-##### open the terminal and be on the same folder as Dockerfile and run the following instructions
+###### Deploy the model as Flask API on Google Cloud API
+###### Install [google cloud sdk](https://cloud.google.com/sdk/docs/install)
+###### Set up your profile on Google Cloud Platform 
+###### Create your first project and enable Cloud Run and Cloud Build API's
+###### open the terminal and be on the same folder as Dockerfile and run the following instructions
 ```
 gcloud builds submit --tag gcr.io/your_project_id/predict
 ```
 ```
 gcloud run deploy --image gcr.io/your_project_id/predict --platform managed
 ```
-##### select the appropriate region, fill out appropriate api name and choose y
+###### select the appropriate region, fill out appropriate api name and choose y
+###### Check this [video](https://youtu.be/vieoHqt7pxo?si=f99uWSE1EqQf_5FC) for better instructions.
 ## Test deployed API
 ##### Exchange the google cloud plaform generated url in the test.ipynb and test it. 
 
